@@ -20,18 +20,27 @@
 <body <?php body_class(); ?>>
 <div class="header" <?php if(!is_home() || !is_front_page()) {?> style="position:inherit;"<?php }?>>
             		<div class="header-inner">
-                    		<div class="logo">
-                            		
-    	                                    <h1><a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?> </a></h1>
-                                            <span><?php bloginfo('description'); ?></span>
-                                   
+                            <div class="logo">
+                              <h1>
+                                <a href="[full link to your Facebook page]">
+                                  <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+                                </a>
+                                <a href="[full link to your Instagram]">
+                                  <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+                                </a>
+                                <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?> </a>
+                            </h1>
+                            <!--
+                            disable description
+                            <span><?php bloginfo('description'); ?></span>
+                            -->
                              </div>
                              <div class="header-widget">
                              	<?php dynamic_sidebar('sidebar-3'); ?>
                              </div><!-- hedaer-widget -->
                              <div class="toggle">
                             <a class="toggleMenu" href="#"><?php _e('Menu','awesomeone'); ?></a>
-                            </div>                           
+                            </div>
                             <div class="nav">
 								<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
                             </div><!-- nav --><div class="clear"></div>
@@ -40,14 +49,14 @@
 <?php if ( is_home() || is_front_page() ) { ?>
     <div class="slider-main">
        <?php
-	   		
+
 			$slideimage = '';
 			$slideimage = array(
 					'1'	=>	get_template_directory_uri().'/images/slides/slider1.jpg',
 					'2'	=>  get_template_directory_uri().'/images/slides/slider2.jpg',
 					'3'	=>  get_template_directory_uri().'/images/slides/slider3.jpg',
 			);
-	   
+
 			$slAr = array();
 			$m = 0;
 			for ($i=1; $i<4; $i++) {
@@ -64,13 +73,13 @@
 						$m++;
 					}
 				}
-				
+
 			}
 			$slideno = array();
 			if( $slAr > 0 ){
 				$n = 0;?>
                 <div id="slider" class="nivoSlider">
-                <?php 
+                <?php
                 foreach( $slAr as $sv ){
                     $n++; ?><img src="<?php echo esc_url($sv['image_src']); ?>" alt="<?php echo esc_attr($sv['image_title']);?>" title="<?php if ( ($sv['image_title']!='') && ($sv['image_desc']!='')) { echo '#slidecaption'.$n ; } ?>"/><?php
                     $slideno[] = $n;
@@ -94,11 +103,11 @@
                         	<a class="common_btn" href="<?php echo get_theme_mod('purchaselink',true); ?>"><?php _e('Purchase Now','awesomeone'); ?></a>
                         <?php } } ?>
                     </div>
-                    </div><?php 
+                    </div><?php
                 } ?>
-                
+
                 </div>
-                <div class="clear"></div><?php 
+                <div class="clear"></div><?php
 			}
             ?>
         </div>
