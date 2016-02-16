@@ -17,7 +17,7 @@ un3-Customize WordPress Theme is released under the terms of GNU GPL
 
 
 *{ margin:0; padding:0; outline:none;}
-body{ margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#fff; position:relative; font:12px/22px arial; color:#666666;}
+body{ margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#000000; position:relative; font:12px/22px arial; color:#fff;}
 img{ margin:0; padding:0; border:none; max-width:100%; height:auto; }
 section img{max-width:100%;}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0 0 5px;}
@@ -130,7 +130,7 @@ article p{margin:10px 0;}
 .post-date{display:inline;}
 .post-comment{display:inline;}
 .post-categories{display:inline;}
-.post-comment a, .post-categories a{ color:#666666;}
+.post-comment a, .post-categories a{ color:#000000;}
 .post-tags{display:inline;}
 form.search-form{margin-bottom:15px;}
 input.search-field, .post-password-form input[type=password]{border:1px #eee solid; padding:4px;}
