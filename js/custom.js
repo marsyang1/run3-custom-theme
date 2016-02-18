@@ -1,12 +1,12 @@
 // NAVIGATION CALLBACK
 var ww = jQuery(window).width();
-jQuery(document).ready(function() { 
+jQuery(document).ready(function() {
 	jQuery(".nav li a").each(function() {
 		if (jQuery(this).next().length > 0) {
 			jQuery(this).addClass("parent");
 		};
 	})
-	jQuery(".toggleMenu").click(function(e) { 
+	jQuery(".toggleMenu").click(function(e) {
 		e.preventDefault();
 		jQuery(this).toggleClass("active");
 		jQuery(".nav").slideToggle('fast');
@@ -41,7 +41,7 @@ var adjustMenu = function() {
 }
 
 jQuery(document).ready(function(){
-	
+
 	//Check to see if the window is top if not then display button
 	jQuery(window).scroll(function(){
 		if (jQuery(this).scrollTop() > 100) {
@@ -50,13 +50,13 @@ jQuery(document).ready(function(){
 			jQuery('.scrollToTop').fadeOut();
 		}
 	});
-	
+
 	//Click event to scroll to top
 	jQuery('.scrollToTop').click(function(){
 		jQuery('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
-	
+
 });
 
 jQuery(document).ready(function() {
@@ -64,7 +64,7 @@ jQuery(document).ready(function() {
         jQuery('.nivoSlider').nivoSlider({
                         effect:'fade',
                         animSpeed: 500,
-                        pauseTime: 3000,
+                        pauseTime: 5000,
                         startSlide: 0,
 						directionNav: true,
 						controlNav: false,
@@ -72,5 +72,3 @@ jQuery(document).ready(function() {
     });
         }
 });
-
-
