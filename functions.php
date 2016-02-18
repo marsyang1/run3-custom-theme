@@ -234,9 +234,9 @@ function awesomeone_custom_blogpost_pagination( $wp_query ){
 function awesomeone_get_slug_by_id($id) {
 	$post_data = get_post($id, ARRAY_A);
 	$slug = $post_data['post_name'];
-	return $slug; 
+	return $slug;
 }
 
 function awesomeone_credit_link(){
-		return "路三家工作室";
+		return "Run3+ Studio";
 	}

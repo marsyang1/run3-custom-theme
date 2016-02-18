@@ -28,7 +28,9 @@
                                         <a href="https://www.instagram.com/run3crew/">
                                             <img title="Instagram" alt="RSS" src="<?php echo get_template_directory_uri().'/images/1455550743_instagram.svg'?>" width="35" height="35" />
                                         </a>
-                                        <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?> </a>
+                                        <a href="<?php echo home_url('/'); ?>">
+                                            <img title="Logo" alt="RSS" src="<?php echo get_template_directory_uri().'/images/logo2.png'?>"/>
+                                        </a>
                                       </h1>
                                       <!--
                                       disable description
