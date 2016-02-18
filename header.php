@@ -21,7 +21,6 @@
 <div class="header" <?php if(!is_home() || !is_front_page()) {?> style="position:inherit;"<?php }?>>
                <div class="header-inner">
                             <div class="logo">
-                                      <h1>
                                         <a href="https://www.facebook.com/Run3Crew/">
                                             <img title="Facebook" alt="Facebook" src="<?php echo get_template_directory_uri().'/images/1455550553_facebook.svg'?>" width="35" height="35" />
                                         </a>
@@ -31,7 +30,6 @@
                                         <a href="<?php echo home_url('/'); ?>">
                                             <img title="Logo" alt="RSS" src="<?php echo get_template_directory_uri().'/images/logo2.png'?>"/>
                                         </a>
-                                      </h1>
                                       <!--
                                       disable description
                                       <span><?php bloginfo('description'); ?></span>
