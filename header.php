@@ -28,7 +28,7 @@
                                             <img title="Instagram" alt="RSS" src="<?php echo get_template_directory_uri().'/images/1455550743_instagram.svg'?>" width="35" height="35" />
                                         </a>
                                         <a href="<?php echo home_url('/'); ?>">
-                                            <img title="Logo" alt="RSS" src="<?php echo get_template_directory_uri().'/images/logo2.png'?>"/>
+                                            <img title="Logo" alt="RSS" src="<?php echo get_template_directory_uri().'/images/logo3.png'?>"/>
                                         </a>
                                       <!--
                                       disable description
