@@ -56,7 +56,7 @@ a.read-more, .common_btn{ display:inline-block; font:400 16px 'Roboto Condensed'
 .header.fixed{position:fixed !important; top:0 !important; margin:0; padding:15px 0; z-index:99;}
 .header .header-inner{ margin:0 auto; padding:0; position:relative; width:1160px;}
 .header .header-inner .logo{margin:0; padding:0; }
-.header .header-inner .logo h1{ font-weight:700; text-transform:uppercase; padding:0; font-family:'Roboto Condensed'; font-size:30px; }
+.header .header-inner .logo h1{ font-weight:700; text-transform:uppercase; padding:0; font-family:'Roboto Condensed'; font-size:36px; }
 .header .header-inner .logo a{ color:#ffffff;}
 .header .header-inner .logo span{ font-size:12px; color:#ffffff; font-family:arial;}
 .container{ width:1160px; margin:0 auto; padding:0; position:relative;}
