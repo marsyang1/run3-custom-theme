@@ -9,7 +9,6 @@
 		</div>
 <?php } ?>
 <div id="sidebar" <?php if( is_page_template('left-sidebar.php')){?> style="float:left;"<?php } ?>>
-    
     <?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
         <aside id="archives" class="widget">
             <h3 class="widget-title"><?php _e( 'Archives', 'awesomeone' ); ?></h3>
