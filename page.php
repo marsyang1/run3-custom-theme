@@ -24,7 +24,9 @@ get_header(); ?>
                 ?>
             <?php endwhile; // end of the loop. ?>
         </div>
-        <div class="clear"></div>
+            <?php get_sidebar('main'); ?>
+            <div class="clear">
+        </div>
     </div>
 </div>
 
